@@ -1,308 +1,626 @@
 *{
+
   padding: 0px; margin: 0px;
+
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
+
   width: 100%;
+
   height: 100%;
+
   font-family: 'Roboto', sans-serif;
+
   background: #f3f3f3;
+
 }
+
 .head{
+
   width: 100%;
+
   background: #000000;
+
   display: flex;
+
   justify-content: space-between;
+
+}
+
+::selection{
+
+  background: none;
+
 }
 
 .head .logo{
+
   width: 100px;
+
   height: 90px;
+
 }
+
 .head .logo img{
+
   width: 100px;
+
   height: 80px;
+
   padding: 0px 30px;
+
 }
 
 .nav{
+
   height: 90px;
+
 }
+
 .nav .nav_menu .link_menu{
+
   text-decoration: none;
+
   color: white;
+
   height: 90px;
+
   text-align: center;
+
   display: block;
+
   font-weight: 600;
+
   font-size: 22px;
+
   width: 180px;
+
 }
+
 .nav .nav_menu .link_menu:hover{
+
   background: silver;
+
 }
 
 .nav .nav_menu{
+
  list-style-type: none;
+
  display: flex;
+
  line-height: 90px;
+
  margin: 0px 0px;
-}
- .list_menu{
-   margin: 0px 0px;
-   position: relative;
-}
-.sub_menu{
-  width: 100%;
-  height: 120px;
-}
-.sub_menu .sub_menu_child{
-  list-style-type: none;
-}
-.sub_menu .sub_menu_child a{
-  position: relative;
-  text-decoration: none;
-  color: white;
-  display: block;
-  background: #222;
-  font-weight: bold;
-  padding: 23px;
-  line-height: 0;
-  display: none;
-  max-width: 134px;
-}
-.click_show:hover >.sub_menu .sub_menu_child a{
-  display: block;
-}
-.sub_menu_child a:hover{
-  background: silver;
+
 }
 
+ .list_menu{
+
+   margin: 0px 0px;
+
+   position: relative;
+
+}
+
+.sub_menu{
+
+  width: 100%;
+
+  height: 120px;
+
+}
+
+.sub_menu .sub_menu_child{
+
+  list-style-type: none;
+
+}
+
+.sub_menu .sub_menu_child a{
+
+  position: relative;
+
+  text-decoration: none;
+
+  color: white;
+
+  display: block;
+
+  background: #222;
+
+  font-weight: bold;
+
+  padding: 23px;
+
+  line-height: 0;
+
+  display: none;
+
+  max-width: 134px;
+
+}
+
+.click_show:hover >.sub_menu .sub_menu_child a{
+
+  display: block;
+
+}
+
+.sub_menu_child a:hover{
+
+  background: silver;
+
+}
 
 .about{
+
   background:url("https://i.imgur.com/Fuf9HTl.png") no-repeat;
+
   background-size: 100%;
+
   width: 100%;
+
   height: 600px;
+
   display: flex;
+
    justify-content: center;
+
  align-items: center;
+
 }
+
 .abou_introduce{
+
  width: 100%;
+
  display: flex;
+
  justify-content: center;
+
  align-items: center;
+
  text-align: center;
+
  flex-direction: column;
+
  color: white;
+
  margin-top: -80px;
+
 }
+
 .about .abou_introduce h2{
+
   text-align: center;
+
   color: white;
+
   background: black;
+
   padding: 30px;
+
   letter-spacing: 4px;
+
   opacity: 0.8;
+
 }
-.about .abou_introduce p{
-  padding: 20px 0px;
-  font-size: 26px;
-  text-align: justify;
-  width: 60%;
-  font-weight: 560;
+
+.about .abou_introduce a{
+
+  padding: 25px;
+
 }
+
 .about .abou_introduce button{
+
   border: none;
+
   width: 260px;
+
   height: 50px;
+
   font-size: 26px;
+
   font-weight: bold;
+
   border-radius: 25px;
+
   background: black;
+
   color: white;
+
   box-shadow: 0px 3px 11px 0px silver;
+
 }
+
 .about .abou_introduce button:hover{
+
   background: #bdc2be;
+
   transition: 0.7s;
+
   color: black;
+
   box-shadow: 3px 0px 11px 0px white;
+
 }
 
 .service{
+
   width: 100%;
+
   height: 750px;
+
 }
+
 .service .service_card{
+
   width: 100%;
+
   height: 500px;
+
   position: relative;
+
 }
+
 .service .service_card h2{
+
   text-align: center;
+
   font-size: 36px;
+
   letter-spacing: 4px;
+
   display: block;
+
   height: 30px;
+
   width: 100%;
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
 }
+
 .service .service_card h2::after{
+
   content: "";
+
   width: 130px;
+
   height: 7px;
+
   background: red;
+
   position: absolute;
+
   left: 365px;
+
   top: 45px;
+
   justify-content: space-between;
+
 }
 
 .service_block{
+
   width: 43%;
+
   height: 150px;
+
   margin: 80px 32px;
+
   background: white;
+
   box-shadow: 0px 2px 5px 0px silver;
+
   float: left;
+
 }
+
 .service_block .fa{
+
   font-size: 50px;
+
   margin: 3px 10px;
+
 }
+
 .service_block .text_service_title{
+
   margin: 10px 10px;
+
   letter-spacing: 2px;
+
 }
+
 .service_block .text_service{
+
   margin: 0px 8px;
+
 }
+
 .website_service_buy{
+
   background: white;
-  padding: 0px 20px;
+
+  padding: 0px 15px;
+
   width: 35%;
+
 }
 
 .website_service{
+
    width: 100%;
+
    height: 430px;
+
    display: flex;
+
    justify-content: space-evenly;
+
    flex-wrap: initial;
+
 }
+
 .website_service_buy img{
+
   content: "";
+
   width: 100%;
+
   height: 190px;
+
   display: block;
+
+  border-radius: 30px 0px 0px 0px;
+
 }
+
 .website_service_buy img:hover{
+
   opacity: 0.7;
+
 }
+
 .website_service_buy .text_serive{
+
   padding: 3px 10px;
+
   box-shadow: 0px 2px 5px 0px silver;
+
   height: 160px;
+
+  border-radius: 0px 0px 30px 0px;
+
 }
 
 .text_serive h1{
+
   width: 100%;
+
   padding: 3px 0px;
+
   letter-spacing: 1px;
+
   font-size: 26px;
+
 }
+
 .text_serive p{
+
   padding: 5px 5px 25px 0px;
+
   font-style: italic;
+
   font-size: 20px;
+
   padding-bottom: 35px;
+
 }
 
 .contact{
+
   background: black;
+
   width: 100%;
+
   height: 300px;
+
   color: white;
+
   display: flex;
+
   justify-content: space-evenly;
+
   align-items: center;
+
 }
+
 .contact .info_contact{
+
   margin-left: -50px;
+
 }
+
 .contact .info_contact p{
+
   padding: 10px 0px;
+
  font-size: 30px;
+
  font-weight: bold;
+
 }
+
 .contact .info_contact a .fa{
+
   margin: 10px 0px;
+
 }
+
 .contact .info_contact a{
+
   text-decoration: none;
+
   color: white;
+
   height: 50px;
+
   margin: 0px 10px;
+
   font-size: 23px;
+
 }
+
 .form_contact{
+
   display: flex;
+
 }
+
 .form_contact .fname{
+
   width: 240px;
+
   height: 28px;
+
   padding: 5px;
+
   border: none;
+
 }
+
 .form_contact .content{
+
   width: 240px;
+
   height: 45px;
+
   padding: 5px;
+
   border: none;
+
 }
+
 .form_contact form .title{
+
   max-width: 300px;
+
   padding: 10px 0px;
+
 }
+
 .form_contact .submit{
+
   border: 2px solid white;
+
   background: black;
+
   color: white;
+
   padding: 10px;
+
   width: 100px;
+
   font-weight: 600;
+
   font-size: 21px:
+
 }
+
 .form_contact .submit:hover{
+
   background: silver;
+
   transition: 0.8s;
+
 }
+
 .footer{
+
   width: 100%;
+
   height: 155px;
+
   display: flex;
+
 }
+
 .footer .col{
+
   width: 100%;
+
   padding: 20px 30px;
+
   background: white;
+
 }
+
 .footer .col li{
+
   width: 100%;
+
   list-style-type: none;
+
   padding: 5px 0px;
+
 }
+
 .footer .col li a{
+
   width: 100%;
+
   padding: 5px 2px;
+
   text-decoration: none;
+
   color: black;
+
 }
+
 .footer .col li a img{
+
   width: 100px;
+
   height: 100px;
+
 }
+
+.text_color{
+
+  animation:
+
+   star 10s ease infinite alternate,
+
+   end 10s linear infinite alternate;
+
+}
+
+@keyframes  star{
+
+  0%{color:black;}
+
+  25%{color:#e44343;}
+
+  50%{color:#43d776;}
+
+  75%{color:#1f53ca;}
+
+  100%{color:#d83cc5;}
+
+}
+
+
+ 
+ 
+
